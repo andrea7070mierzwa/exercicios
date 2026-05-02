@@ -1,0 +1,32 @@
+<!--Vamos criar uma página onde você tem três "Lâmpadas" (quadrados). Vamos usar Class para dar a forma a todas elas e ID para ligar/desligar uma por uma via JavaScript.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Lâmpadas</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <div class="container">
+    <h2>Minhas Lâmpadas</h2>
+    
+    <!-- Classe igual para todas, ID diferente para cada uma -->
+    <div id="lampada1" class="lampada"></div>
+    <button onclick="interruptor('lampada1')">On/Off 1</button>
+
+    <div id="lampada2" class="lampada"></div>
+    <button onclick="interruptor('lampada2')">On/Off 2</button>
+
+    <div id="lampada3" class="lampada"></div>
+    <button onclick="interruptor('lampada3')">On/Off 3</button>
+
+    <div id="lampada4" class="lampada"></div>
+    <button onclick="interruptor('lampada4')">On/Off 4</button>
+</div>
+  
+  <script src="estilos.js"></script>
+  
+</body>
+</html>

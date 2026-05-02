@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio</title>
+  <link rel="stylesheet" href="cardapio.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Meu Cardápio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="tela" class="modo-claro">
+    <h1>Seja bem-vindo ao meu cardápio!</h1>
+
+  </div>
+  <main>
+    <section.menu-item>
+      <h2>Pratos Principais</h2>
+      <div>
+
+        <h3>Frango Grelhado</h3>
+        <p>Frango grelhado servido com legumes e arroz.</p>
+        <p class="preco">R$ 25,00</p>
+        <button>Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Frango Grelhado', 25.00)">Adicionar</button>
+
+
+      </div>
+      <div>
+        <h3>Peixe Assado</h3>
+        <p>Peixe assado com ervas finas, acompanhado de purê de batatas.</p>
+        <p class="preco">R$ 30,00</p>
+        <button>Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Peixe Assado', 30.00)">Adicionar</button>
+
+      </div>
+
+      <div>
+        <h3>Macarrão à Bolonhesa</h3>
+        <p>Macarrão servido com molho bolonhesa e queijo ralado.</p>
+        <p class="preco">R$ 20,00</p>
+        <button>Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Macarrão à Bolonhesa', 20.00)">Adicionar</button>
+
+      </div>
+
+      <div>
+        <h3>Salada Caesar</h3>
+        <p>Salada Caesar com alface, croutons, queijo parmesão e molho Caesar.</p>
+        <p class="preco">R$ 15,00</p>
+        <button>Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Salada Caesar', 15.00)">Adicionar</button>
+
+      </div>
+      </section>
+  </main>
+  <button>Finalizar Pedido</button>
+  <a href="carrinho.html">Ver Carrinho</a>
+
+  <script src="cardapio.js">
+    document.getElementById("tela").classList.add("modo-escuro");
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* Estilo comum a todas (Class) */
+.lampada {
+    width: 100px;
+    height: 100px;
+    background-color: #333; /* Apagada */
+    margin: 10px auto;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+/* O estado "Ligado" (Class que o JS vai colocar/tirar) */
+.acesa {
+    background-color: #f1c40f; /* Amarelo brilhante */
+    box-shadow: 0 0 20px #f1c40f;
+}
+
+.container { text-align: center; font-family: sans-serif; }

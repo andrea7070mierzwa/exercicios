@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Carrinho - Checkout</title>
+    <!-- Conectando o CSS que você já criou -->
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+    <header>
+        <h1>Resumo do Pedido</h1>
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Voltar ao Cardápio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="itens-carrinho" class="menu-item">
+            <!-- O JS vai injetar os itens aqui -->
+            <p>Seu carrinho está vazio...</p>
+        </div>
+
+        <div class="menu-item">
+            <h2 id="total">Total: R$ 0,00</h2>
+            <button onclick="finalizarPedido()">Confirmar Pedido</button>
+            <button onclick="limparCarrinho()" style="background-color: #777;">Limpar Tudo</button>
+        </div>
+    </main>
+
+    <!-- Conectando o JS específico do carrinho -->
+    <script src="carrinho.js"></script>
+</body>
+</html>
