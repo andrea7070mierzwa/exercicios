@@ -1,0 +1,45 @@
+body { background-color: #eeb978; }
+
+#mural { background-color: #f5f5f5; 
+border-color: blueviolet;}
+
+button { background-color: #09766d; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+button:hover { background-color: #45a049; }
+
+input, select { padding: 10px; margin: 5px; border: 1px solid #ccc; border-radius: 4px;
+font-size: 16px;
+border-color: aqua; }
+
+.container-geral { text-align: center; font-family: sans-serif; padding: 20px; }
+
+.mural-container {
+    display: flex; /* Alinha os post-its um ao lado do outro */
+    flex-wrap: wrap; /* Pula linha se não couber */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    min-height: 200px;
+    border: 2px dashed #ccc;
+}
+
+.postit {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.2);
+    transform: rotate(-2deg); /* Dá um charme de papel colado */
+    font-family: cursive;
+    color: rgb(14, 21, 159);
+    font-style: italic;
+    font-weight: bold;
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Classes de cores */
+.amarelo { background-color: #fff176; }
+.azul { background-color: #81d4fa; }
+.verde { background-color: #a5d6a7; }
+.rosa { background-color: #f48fb1; }

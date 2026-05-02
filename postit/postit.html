@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de recados</title>
+    <link rel="stylesheet" href="postit.css">
+    
+</head>
+<body>
+    <div class="container-geral">
+    <div class="controles">
+        <input type="text" id="textoPostit" placeholder="Digite seu lembrete...">
+        <select id="corPostit" onchange="mudarCor(this)">
+            <option value="amarelo">Amarelo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="rosa">Rosa</option>
+        </select>
+        <button onclick="criarPostit()">Colar no Mural</button>
+    </div>
+
+    <!-- O Mural onde os post-its vão aparecer -->
+    <div id="mural" class="mural-container"></div>
+</div>
+
+<script src="postit.js" defer></script>
+</body>
+</html>
