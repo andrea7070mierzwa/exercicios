@@ -1,20 +1,45 @@
-body { background-color: #eeb978; }
+body {
+    background-color: #eeb978;
+}
 
-#mural { background-color: #f5f5f5; 
-border-color: blueviolet;}
+#mural {
+    background-color: #f5f5f5;
+    border-color: blueviolet;
+}
 
-button { background-color: #09766d; color: white; border: none; padding: 10px 20px; cursor: pointer; }
-button:hover { background-color: #45a049; }
+button {
+    background-color: #09766d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-input, select { padding: 10px; margin: 5px; border: 1px solid #ccc; border-radius: 4px;
-font-size: 16px;
-border-color: aqua; }
+button:hover {
+    background-color: #45a049;
+}
 
-.container-geral { text-align: center; font-family: sans-serif; padding: 20px; }
+input,
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    border-color: aqua;
+}
+
+.container-geral {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
 
 .mural-container {
-    display: flex; /* Alinha os post-its um ao lado do outro */
-    flex-wrap: wrap; /* Pula linha se não couber */
+    display: flex;
+    /* Alinha os post-its um ao lado do outro */
+    flex-wrap: wrap;
+    /* Pula linha se não couber */
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
@@ -26,20 +51,53 @@ border-color: aqua; }
     width: 150px;
     height: 150px;
     padding: 10px;
-    box-shadow: 5px 5px 7px rgba(0,0,0,0.2);
-    transform: rotate(-2deg); /* Dá um charme de papel colado */
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
     font-family: cursive;
     color: rgb(14, 21, 159);
     font-style: italic;
     font-weight: bold;
-   align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 /* Classes de cores */
-.amarelo { background-color: #fff176; }
-.azul { background-color: #81d4fa; }
-.verde { background-color: #a5d6a7; }
-.rosa { background-color: #f48fb1; }
+.amarelo {
+    background-color: #fff176;
+}
+
+.azul {
+    background-color: #81d4fa;
+}
+
+.verde {
+    background-color: #a5d6a7;
+}
+
+.rosa {
+    background-color: #f48fb1;
+}
+#mural {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.btn-excluir {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-excluir:hover {
+    color: red;
+}
